@@ -1,5 +1,5 @@
 <h2>Fruit Website with HTML CSS and JavaScript</h2>
-<p>View Demo : <a href="">Fruit Website</a></p>
+<p>View Demo : <a href="https://younesnoorzahi.github.io/Fruit-Website-with-HTML-CSS-and-JavaScript/">Fruit Website</a></p>
 <p>I'll create a simple yet functional fruit website using pure HTML, CSS, and JavaScript.</p>
 
 ```
