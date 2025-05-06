@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruits - Healthy & Delicious</title>
+    <link rel="website icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Fruity Logo">
+                <h1>Fruity</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Fresh Fruits Delivered to Your Door</h2>
+                <p>Discover the freshest, highest quality fruits sourced directly from local farms.</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="img/fruit1.jpg" alt="Fresh Fruits">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Fresh Fruits</h2>
+            
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="everyday">Everyday</button>
+                <button class="filter-btn" data-category="citrus">Citrus</button>
+                <button class="filter-btn" data-category="berries">Berries</button>
+                <button class="filter-btn" data-category="tropical">Tropical</button>
+            </div>
+            
+            <!-- Fruits Grid -->
+            <div class="fruits-grid" id="fruits-grid">
+                <!-- Fruits will be added here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="img/fram.jpg" alt="Our Farm">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About Fruity</h2>
+                <p>At Fruity, we're passionate about providing the freshest, highest-quality fruits to our customers. We work directly with local farmers to ensure that every piece of fruit meets our strict standards.</p>
+                <p>Our mission is to make healthy eating accessible to everyone while supporting sustainable farming practices that are good for both people and the planet.</p>
+                <p>From farm to table, we handle each fruit with care to preserve its natural flavors and nutritional benefits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Fruity</h3>
+                    <p>Bringing fresh fruits to your doorstep since 2023.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        123 Fruit Street<br>
+                        Orchard City, FC 12345<br>
+                        <a href="mailto:info@fruity.com">info@fruity.com</a><br>
+                        <a href="tel:+11234567890">(123) 456-7890</a>
+                    </address>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new fruits and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Fruity. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-sidebar">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button class="close-cart" id="close-cart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be added here by JavaScript -->
+            </div>
+            <div class="cart-empty" id="cart-empty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your cart is empty</p>
+                <p class="cart-empty-message">Add some delicious fruits to get started!</p>
+                <button class="btn continue-shopping" id="continue-shopping">Continue Shopping</button>
+            </div>
+            <div class="cart-footer" id="cart-footer">
+                <div class="cart-total">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="cart-shipping">
+                    <span>Shipping</span>
+                    <span>Calculated at checkout</span>
+                </div>
+                <div class="cart-total-price">
+                    <span>Total</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button class="btn checkout-btn">Checkout</button>
+                <button class="continue-shopping-link" id="continue-shopping-link">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
